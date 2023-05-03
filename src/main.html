@@ -1,0 +1,35 @@
+<h1>Hello {{name}}!</h1>
+    <a target="_blank" href="https://angular.io/start">
+      Learn more about Angular 
+    </a>
+<h2>{{cargo}}</h2>
+<br/>
+<label for="txtA"> A: </label>
+<input type="text" id="txtA" [(ngModel)]="a"/>
+<br/>
+<label for="txtB"> B: </label>
+<input type="text" id="txtB" [(ngModel)]="b"/>
+<br/>
+<hr>
+
+
+<p>
+Suma =   {{c}}
+</p>
+<button (click)="calcular()">Calcular {{contador}}</button>
+
+<p>
+ Resta =   {{r}}
+  </p>
+  <button (click)="calcularResta()">Calcular {{contador}}</button>
+
+
+<p>
+  Multiplicacion =   {{m}}
+  </p>
+  <button (click)=" calculaMultipl()">Calcular {{contador}}</button>
+  
+  <p>
+   Division =   {{d}}
+    </p>
+    <button (click)="calculaDiv()">Calcular {{contador}}</button>
