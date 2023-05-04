@@ -17,19 +17,38 @@
 Suma =   {{c}}
 </p>
 <button (click)="calcular()">Calcular {{contador}}</button>
-
+<hr>
 <p>
  Resta =   {{r}}
   </p>
-  <button (click)="calcularResta()">Calcular {{contador}}</button>
+  <button (click)="calcularResta()">Calcular </button>
 
-
+<hr>
 <p>
   Multiplicacion =   {{m}}
   </p>
-  <button (click)=" calculaMultipl()">Calcular {{contador}}</button>
-  
+  <button (click)=" calculaMultipl()">Calcular </button>
+  <hr>
   <p>
    Division =   {{d}}
     </p>
-    <button (click)="calculaDiv()">Calcular {{contador}}</button>
+    <button (click)="calculaDiv()">Calcular</button>
+
+    <hr>
+    <hr>
+    <hr>
+
+<!-- le asiganos en el valor de Andy 
+ <app-mensaje name="Andy"></app-mensaje> -->
+
+<!-- EL [] es como llamar una variable y asiganarle el valor de c pero ojo le hacemos numero
+ <app-mensaje [name]="''+c"></app-mensaje> -->
+<hr>
+<hr>
+<p>Ejemplo Outout</p>
+
+<ul>
+  <li *ngFor="let item of items">{{item}}</li>
+</ul>
+<hr />
+<app-mensaje (newItemEvent)="addItem($event)"></app-mensaje>

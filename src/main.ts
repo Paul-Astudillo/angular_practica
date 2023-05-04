@@ -3,13 +3,15 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { MensajeComponent } from './mensaje/mensaje.component';
 
 @Component({
   selector: 'my-app',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule  , MensajeComponent],
+
   templateUrl: './main.html',
-  //styleUrls:['./main.css'],
+  styleUrls:['./main.css'],
 })
 export class App {
   name = 'Paul';
@@ -23,6 +25,11 @@ export class App {
   m=0;
   d=0;
 
+  items = ['item1', 'item2',];
+
+  addItem(newItem: string) {
+    this.items.push(newItem);
+  }
 
   calcular() {
 

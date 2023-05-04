@@ -1,0 +1,8 @@
+<p>
+mensaje works! {{name}}
+</p>
+  
+  <label for="item-input">Agregar a la Lista</label>
+  <br/>
+  <input type="text" id="item-input" #newItem>
+  <button type="button" (click)="addNewItem(newItem.value)">Agregar a la lista</button>
